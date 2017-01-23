@@ -1,5 +1,5 @@
 {
-  "name": "platform-console",
+  "name": "botler-platform-console",
   "version": "1.0.0",
   "description": "Console platform for Botler",
   "main": "lib/index.js",
