@@ -1,24 +1,24 @@
 {
-  "name": "botler-platform-console",
+  "name": "alana-platform-console",
   "version": "1.0.0",
-  "description": "Console platform for Botler",
+  "description": "Console platform for Alana",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/botlerjs/platform-console.git"
+    "url": "git+https://github.com/alana-bot/platform-console.git"
   },
   "author": "Adam Juhasz",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/botlerjs/platform-console/issues"
+    "url": "https://github.com/alana-bot/platform-console/issues"
   },
-  "homepage": "https://github.com/botlerjs/platform-console#readme",
+  "homepage": "https://alana.cloud",
   "devDependencies": {
     "@types/bluebird": "^3.0.37",
-    "botler": "github:fyndme/bot-framework#v2.0"
+    "botler": "github:alana-bot/core"
   },
   "dependencies": {
     "bluebird": "^3.4.7"
