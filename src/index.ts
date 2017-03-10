@@ -14,6 +14,7 @@ export default class Console implements PlatformMiddleware {
 
   constructor(bot: Botler) {
     this.bot = bot;
+    bot.addPlatform(this);
   }
 
   public start() {
