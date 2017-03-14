@@ -1,9 +1,9 @@
 /// <reference types="bluebird" />
-import { PlatformMiddleware } from 'botler/lib/types/platform';
-import { Message } from 'botler/lib/types/bot';
-import { User, BasicUser } from 'botler/lib/types/user';
 import * as Promise from 'bluebird';
-import Botler from 'botler';
+import { PlatformMiddleware } from '@alana/core/lib/types/platform';
+import { Message } from '@alana/core/lib/types/bot';
+import { User, BasicUser } from '@alana/core/lib/types/user';
+import Botler from '@alana/core';
 export default class Console implements PlatformMiddleware {
     private rl;
     protected theUser: BasicUser;

@@ -1,6 +1,6 @@
 {
   "name": "@alana/platform-console",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Console platform for Alana",
   "main": "lib/index.js",
   "scripts": {

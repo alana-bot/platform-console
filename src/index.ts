@@ -1,11 +1,13 @@
-import { PlatformMiddleware } from 'botler/lib/types/platform';
-
-import { Message } from 'botler/lib/types/bot';
-import * as Bot from 'botler/lib/types/bot';
-import { User, BasicUser } from 'botler/lib/types/user';
 import * as readline from 'readline';
 import * as Promise from 'bluebird';
-import Botler from 'botler';
+
+import { PlatformMiddleware } from '@alana/core/lib/types/platform';
+import { Message } from '@alana/core/lib/types/bot';
+import * as Bot from '@alana/core/lib/types/bot';
+import { User, BasicUser } from '@alana/core/lib/types/user';
+import { GreetingMessage } from '@alana/core/lib/types/message';
+
+import Botler from '@alana/core';
 
 export default class Console implements PlatformMiddleware {
   private rl: readline.ReadLine;
@@ -29,7 +31,10 @@ export default class Console implements PlatformMiddleware {
       input: process.stdin,
       output: process.stdout,
     });
-    this.bot.processGreeting(this.theUser);
+    const greeting: GreetingMessage = {
+      type: 'greeting',
+    };
+    this.bot.processMessage(this.theUser, greeting)
 
     this.rl.on('line', (input: string) => {
       console.log(`<- "${input}"`);
